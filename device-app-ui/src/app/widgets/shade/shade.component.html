@@ -1,0 +1,11 @@
+<div class="shade-div">
+    <div class="strike"><span>SHADES</span></div>
+    <br>
+    <div class="row">
+        <div *ngFor="let color of shades" class="col-md-2 col-sm-4 col-xs-4 shade-box" (click)="selectShade(color)">
+           <div class="shade" [style.backgroundColor]="color" [ngClass]="{'selected': color == shade}">
+                <img *ngIf="color == shade" class="tick" src="../../../assets/images/tick-wh.png" alt="">
+            </div>
+        </div> 
+    </div>
+</div>

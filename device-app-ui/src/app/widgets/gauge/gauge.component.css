@@ -1,0 +1,18 @@
+mwl-gauge.two {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+mwl-gauge.two > .gauge > .dial {
+  stroke: #EEE;
+  stroke-width: 1;
+}
+mwl-gauge.two > .gauge > .value {
+  stroke: rgb(155, 144, 250);
+  stroke-dasharray: none;
+  stroke-width: 2;
+}
+mwl-gauge.two > .gauge > .value-text {
+  fill: black;    
+  box-shadow: 0px 9px 20px 4px #bdbdbdeb;
+}

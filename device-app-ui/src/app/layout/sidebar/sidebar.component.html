@@ -1,0 +1,22 @@
+<div class="sidebar">
+    <div class="back-arrow-container">
+        <img src="../../../assets/images/back-wh.png" class="back-arrow" alt="back-arrow">
+    </div>
+    
+    <div class="sidebar-nav">
+        <div class="sidebar-nav-item" *ngFor="let device of devices" [routerLink]="'devices/' + device.id" routerLinkActive="active">
+            <div class="outer" [style.backgroundImage]="'url(../../../assets/images/' + device.image + ')'">
+            </div>
+            
+            <div class="inner" >
+                <div class="device-name"><b>{{device.name}}</b></div>
+                <div class="device-location">In {{device.location}}</div>
+            </div>
+
+            <div class="active-icon">
+                <img class="active-img" src="../../../assets/images/chevron-right.png" alt="">
+            </div>
+        </div>
+    </div>
+
+</div>

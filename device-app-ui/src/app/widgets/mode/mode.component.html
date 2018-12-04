@@ -1,0 +1,19 @@
+<div class="list-div">
+    
+    <div class="strike"><span>MODE</span></div>
+    <br>
+    <div class="row list-item" *ngFor="let state of modes" [ngClass]="{'selected': state.mode == mode }" (click)="selectMode(state.mode)">
+        <div class="icon col-md-1 col-sm-1 col-xs-2" >
+           <img [src]="'../../../assets/images/' + state.image" alt="">
+        </div> 
+        <div class="text col-md-6 col-sm-6 col-xs-8">
+            {{state.text}}
+        </div> 
+        <div class="value col-md-4 col-sm-4 ">
+            {{state.value}}
+        </div> 
+        <div class="tick-mark col-md-1 col-sm-1 col-xs-2">
+            <img [src]="'../../../assets/images/' + ( state.mode == mode ? 'tick-wh.png' : 'tick-wh-lt.png')" alt="">
+        </div> 
+    </div>
+</div>
