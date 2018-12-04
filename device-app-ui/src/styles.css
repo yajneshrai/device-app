@@ -1,1 +1,61 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+	font-size: 12px !important;
+}
+
+* {
+	font-family: 'Montserrat', 'arial', sans-serif;
+}
+
+.row {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.strike {
+	display: block;
+	text-align: left;
+	overflow: hidden;
+	white-space: nowrap;     
+	padding: 0 1%;
+    margin-right: 2%;
+}
+
+.strike > span {
+	position: relative;
+	display: inline-block;    
+	font-size: 10px;
+    color: #a86bfb;
+    font-weight: bold;
+}
+
+
+.strike > span:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	width: 9999px;
+	height: 1px;
+	background: #BDBDBD;;
+	margin-left: 15px;
+}
+
+.strike > span:after {
+	left: 90%;
+	margin-left: 15px;
+}
+
+.button:active, 
+ button:active,
+.button:focus, 
+ button:focus,
+.button:hover, 
+ button:hover{
+    border:none !important;
+    outline:none !important;
+}
