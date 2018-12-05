@@ -10,3 +10,21 @@ Steps to run the application:
 4. Create build - ```npm run build```
 5. Run UI server - ```node server.js``` 
 6. Server starts running on port 4000, check http://localhost:4000 for UI.
+
+
+Desktop/Laptop:
+
+
+![Desktop](https://github.com/yajneshrai/device-app/blob/master/screens/Laptop.PNG)
+
+
+
+Tablet:
+
+![Tablet](https://github.com/yajneshrai/device-app/blob/master/screens/Tablet.PNG)
+
+
+
+Mobile:
+
+![Mobile](https://github.com/yajneshrai/device-app/blob/master/screens/Mobile.PNG)
