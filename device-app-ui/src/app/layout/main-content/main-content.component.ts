@@ -19,7 +19,7 @@ export class MainContentComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe( (param: Params) => { 
       this.deviceId = this.route.snapshot.params['id'];
-      this.currentDevice = devices.filter(device => device.id == this.deviceId)[0];
+      this.currentDevice = this.dataService.getDevice(this.deviceId);
       this.invalidDevice = !this.currentDevice ? true : false;
     });
   }
